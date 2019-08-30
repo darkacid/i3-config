@@ -14,6 +14,9 @@ set $mod Mod4
 #############################	CUSTOM	################################################################
 exec --no-startup-id nm-applet
 exec synergy
+setxkbmap -layout us,ru,am -variant ",,phonetic"
+setxkbmap -option 'grp:alt_shift_toggle'
+
 # Pulse Audio controls
 exec start-pulseaudio-x11
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
